@@ -5,8 +5,8 @@ export function middleware(request: NextRequest) {
   const hostname = request.headers.get('host') || ''
   const url = request.nextUrl.clone()
 
-  // Ana domain (siparisqr.com)
-  if (hostname === 'siparisqr.com' || hostname === 'localhost:3000') {
+  // Ana domain (siparisqr.com) ve Vercel domain
+  if (hostname === 'siparisqr.com' || hostname === 'localhost:3000' || hostname.includes('vercel.app')) {
     // Ana sayfa için mevcut yapıyı kullan
     return NextResponse.next()
   }
