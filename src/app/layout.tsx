@@ -6,22 +6,41 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'SiparisQR - Turkiye\'nin En Hizli QR Siparis Sistemi',
-  description: '5 dakikada kurulum, 99TL/ay\'dan baslar. QR taradiniz, siparis verdiniz, mutfaga gitsin!',
-  keywords: 'qr siparis, restaurant, menu, siparis sistemi, qr kod, turkiye',
-  authors: [{ name: 'SiparisQR Team' }],
+  title: 'QR Sipariş Sistemi | 5 Dakikada Kurulum | SiparişQR',
+  description: 'Türkiye\'nin en hızlı QR sipariş sistemi. Rakiplerinizden %300 hızlı kurulum, %50 daha ucuz fiyat. 30 gün ücretsiz deneyin. ₺99/ay\'dan başlar.',
+  keywords: 'qr sipariş sistemi, restoran sipariş sistemi, qr menü, dijital menü, restoran teknolojisi, sipariş otomasyonu, qr kod menü, restoran çözümleri, mobil sipariş, temassız sipariş, türkiye',
+  authors: [{ name: 'SiparişQR Team' }],
   robots: 'index, follow',
+  alternates: {
+    canonical: 'https://siparisqr.com',
+  },
   openGraph: {
-    title: 'SiparisQR - Turkiye\'nin En Hizli QR Siparis Sistemi',
-    description: '5 dakikada kurulum, 99TL/ay\'dan baslar. QR taradiniz, siparis verdiniz, mutfaga gitsin!',
+    title: 'QR Sipariş Sistemi | 5 Dakikada Kurulum | SiparişQR',
+    description: 'Türkiye\'nin en hızlı QR sipariş sistemi. Rakiplerinizden %300 hızlı kurulum, %50 daha ucuz fiyat. 30 gün ücretsiz deneyin.',
     type: 'website',
     locale: 'tr_TR',
+    url: 'https://siparisqr.com',
+    siteName: 'SiparişQR',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'SiparişQR - QR Sipariş Sistemi',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SiparisQR - Turkiye\'nin En Hizli QR Siparis Sistemi',
-    description: '5 dakikada kurulum, 99TL/ay\'dan baslar. QR taradiniz, siparis verdiniz, mutfaga gitsin!',
+    title: 'QR Sipariş Sistemi | 5 Dakikada Kurulum | SiparişQR',
+    description: 'Türkiye\'nin en hızlı QR sipariş sistemi. Rakiplerinizden %300 hızlı kurulum, %50 daha ucuz fiyat. 30 gün ücretsiz deneyin.',
+    images: ['/og-image.jpg'],
+    creator: '@siparisqr',
   },
+  verification: {
+    google: 'your-google-verification-code',
+  },
+  category: 'technology',
 }
 
 export const viewport: Viewport = {
